@@ -11,5 +11,5 @@ describe('Pruebas de la página de inicio', () => {
     home.gotoCreateAccountButton();
     cy.get('#form-validate > fieldset.fieldset.create.info').should('be.visible')
 
-  });
+  }); 
 });
