@@ -12,8 +12,7 @@ beforeEach(() => {
 describe('HU_QCA-7 : Crear nueva cuenta', () => {
   before(() => {
     cy.clearCookies()
-    cy.clearLocalStorage()
-    
+    cy.clearLocalStorage()  
   });  
 
   it('HU_QCA-7 : Crear nueva cuenta | TC-001: Ingresar a la pagina web', () => {
@@ -26,7 +25,14 @@ describe('HU_QCA-7 : Crear nueva cuenta', () => {
   });
 
   it('HU_QCA-7 : Crear nueva cuenta | TC-003: Diligenciar Formulario', () => {
-    createAccount.llenarNombre();
+    createAccount.llenarFormulario();
+    cy.wait(2000)
+    cy.get('button.action.submit.primary').click();
+  });
+
+  it('HU_QCA-7 : Crear nueva cuenta | TC-004: Confirmar ingreso a My Account', () => {
+    cy.get('#html-body > div.page-wrapper > header > div.panel.wrapper > div > ul').should('be.visible').contains('Welcome')      
+    cy.get('#maincontent > div.columns > div.column.main > div.page-title-wrapper > h1').should('be.visible').contains('My Account') 
   });
 
 
