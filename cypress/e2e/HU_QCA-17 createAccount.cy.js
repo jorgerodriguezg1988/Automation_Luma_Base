@@ -9,34 +9,30 @@ beforeEach(() => {
   cy.viewport(1500, 900);    
 });
 
-describe('HU_QCA-7 : Crear nueva cuenta', () => {
+describe('HU_QCA-17 : Crear nueva cuenta', () => {
   before(() => {
     cy.clearCookies()
     cy.clearLocalStorage()  
   });  
 
-  it('HU_QCA-7 : Crear nueva cuenta | TC-001: Ingresar a la pagina web', () => {
+  it('HU_QCA-17 : Crear nueva cuenta | TC-001: Ingresar a la pagina web', () => {
     openUrl.openUrl();
   });  
 
-  it('HU_QCA-7 : Crear nueva cuenta | TC-002: Debe navegar a la página de crear cuenta desde el home', () => {
+  it('HU_QCA-17 : Crear nueva cuenta | TC-002: Debe navegar a la página de crear cuenta desde el home', () => {
     home.gotoCreateAccountButton();
     cy.get('#form-validate > fieldset.fieldset.create.info').should('be.visible')
   });
 
-  it('HU_QCA-7 : Crear nueva cuenta | TC-003: Diligenciar Formulario', () => {
+  it('HU_QCA-17 : Crear nueva cuenta | TC-003: Diligenciar Formulario', () => {
     createAccount.llenarFormulario();
     cy.wait(2000)
     cy.get('button.action.submit.primary').click();
   });
 
-  it('HU_QCA-7 : Crear nueva cuenta | TC-004: Confirmar ingreso a My Account', () => {
+  it('HU_QCA-17 : Crear nueva cuenta | TC-004: Confirmar ingreso a My Account', () => {
     cy.get('#html-body > div.page-wrapper > header > div.panel.wrapper > div > ul').should('be.visible').contains('Welcome')      
     cy.get('#maincontent > div.columns > div.column.main > div.page-title-wrapper > h1').should('be.visible').contains('My Account') 
   });
 
-
-
-
-   
 });
