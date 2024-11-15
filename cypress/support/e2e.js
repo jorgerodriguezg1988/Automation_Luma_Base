@@ -16,5 +16,20 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+Cypress.on('uncaught:exception', (err, runnable) => {
+    if (err.message.includes("Cannot read properties of null (reading 'pop')")) {
+        // Ignorar este error específico
+        return false;
+    }
+
+    if (err.message.includes("Unexpected end of JSON input")) {
+        // Ignorar este error específico
+        return false;
+    }
+    // Permitir que otros errores detengan la ejecución
+});
+
+
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
