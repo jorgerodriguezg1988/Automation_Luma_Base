@@ -23,22 +23,6 @@ class CreateAccount {
         cy.get('#show-password').check() // se puede usar el metodo uncheck() pero es mejor comentarear la linea
     }
 
-    
-
-
-
-
-
-
-
-
-    
-
-    
-
-
-
-
   }
   
   export default CreateAccount;

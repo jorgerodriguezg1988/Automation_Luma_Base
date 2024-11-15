@@ -1,3 +1,5 @@
+import { should } from "chai";
+
 class Home {
     
     gotoCreateAccountButton() {
@@ -35,9 +37,12 @@ class Home {
             .should('be.visible')        // Asegura que la opción aparezca después del hover
             .click();                    // Haz clic en la opción que se mostró
 
-        cy.get('#html-body > div.page-wrapper > div.breadcrumbs > ul > li.item.category21').should('be.visible')
+        cy.get('#html-body > div.page-wrapper > div.breadcrumbs > ul > li.item.category21').should('be.visible')        
+    }
 
-        
+    gotoPDP() {
+        cy.get('#maincontent > div.columns > div > div:nth-child(7) > div > div:nth-child(5) > div > div:nth-child(5) > ol > div > div > div:nth-child(10) > div > li > div > a > span').should('be.visible').click()
+        cy.get('#product-addtocart-button').should('be.visible')
     }
 
 
