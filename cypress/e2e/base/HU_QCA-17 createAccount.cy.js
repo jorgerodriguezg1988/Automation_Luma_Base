@@ -1,6 +1,6 @@
-import WebPage from '../fixtures/WebPage';
-import Home from '../pageObjects/home';
-import CreateAccount from '../pageObjects/createAccount';
+import WebPage from '../../fixtures/WebPage';
+import Home from '../../pageObjects/home';
+import CreateAccount from '../../pageObjects/createAccount';
 const openUrl = new WebPage();
 const home = new Home();
 const createAccount = new CreateAccount();

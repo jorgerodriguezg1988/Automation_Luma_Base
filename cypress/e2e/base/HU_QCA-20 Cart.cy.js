@@ -1,8 +1,8 @@
-import WebPage from '../fixtures/WebPage';
-import Home from '../pageObjects/home';
-import PLP from '../pageObjects/PLP';
-import PDP from '../pageObjects/PDP';
-import cart from '../pageObjects/cart';
+import WebPage from '../../fixtures/WebPage';
+import Home from '../../pageObjects/home';
+import PLP from '../../pageObjects/PLP';
+import PDP from '../../pageObjects/PDP';
+import cart from '../../pageObjects/cart';
 
 
 const openUrl = new WebPage();

@@ -1,7 +1,7 @@
-import WebPage from '../fixtures/WebPage';
-import Home from '../pageObjects/home';
-import PLP from '../pageObjects/PLP';
-import PDP from '../pageObjects/PDP';
+import WebPage from '../../fixtures/WebPage';
+import Home from '../../pageObjects/home';
+import PLP from '../../pageObjects/PLP';
+import PDP from '../../pageObjects/PDP';
 
 
 const openUrl = new WebPage();
