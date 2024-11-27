@@ -1,8 +1,8 @@
-import WebPage from '../fixtures/WebPage';
-import Home from '../pageObjects/home';
-import cart from '../pageObjects/cart';
-import SignIn from '../pageObjects/SignIn';
-import Checkout from '../pageObjects/checkout';
+import WebPage from '../../fixtures/WebPage';
+import Home from '../../pageObjects/home';
+import cart from '../../pageObjects/cart';
+import SignIn from '../../pageObjects/SignIn';
+import Checkout from '../../pageObjects/checkout';
 
 
 const openUrl = new WebPage();

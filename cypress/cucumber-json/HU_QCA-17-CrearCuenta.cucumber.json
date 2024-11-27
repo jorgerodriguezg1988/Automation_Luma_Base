@@ -1,0 +1,65 @@
+[
+  {
+    "description": "  Como usuario final\n  Quiero poder registrarme en la plataforma\n  Para tener acceso a mi cuenta y sus funcionalidades.",
+    "keyword": "Feature",
+    "name": "Crear una nueva cuenta",
+    "line": 1,
+    "id": "crear-una-nueva-cuenta",
+    "tags": [],
+    "uri": "HU_QCA-17-CrearCuenta.feature",
+    "elements": [
+      {
+        "id": "crear-una-nueva-cuenta;verificar-que-se-crea-de-forma-exitosa-la-cuenta-de-usuario",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verificar que se crea de forma exitosa la cuenta de usuario",
+        "tags": [
+          {
+            "name": "@HU_QCA-17-CrearCuenta",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "Que el usuario ingresa a la pagina web",
+            "result": {
+              "status": "undefined",
+              "duration": 50000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Navega a la página de crear cuenta desde el home",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "Diligencia el formulario de registro",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Debería confirmar ingreso a My Account",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

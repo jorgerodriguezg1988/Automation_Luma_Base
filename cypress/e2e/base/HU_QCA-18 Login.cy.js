@@ -1,6 +1,6 @@
-import WebPage from '../fixtures/WebPage';
-import Home from '../pageObjects/home';
-import SignIn from '../pageObjects/SignIn';
+import WebPage from '../../fixtures/WebPage';
+import Home from '../../pageObjects/home';
+import SignIn from '../../pageObjects/SignIn';
 
 const openUrl = new WebPage();
 const home = new Home();

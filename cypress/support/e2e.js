@@ -30,6 +30,10 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 });
 
 
+// Registra el preprocesador
+import "@badeball/cypress-cucumber-preprocessor";
+
+
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
